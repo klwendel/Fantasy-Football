@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2DA7E67F-1A86-4D2B-8AF6-6EC41A07FD15}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FantasyFootball.My.MyApplication</StartupObject>
+    <RootNamespace>FantasyFootball</RootNamespace>
+    <AssemblyName>FantasyFootball</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FantasyFootball.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FantasyFootball.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmActions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActions.Designer.vb">
+      <DependentUpon>frmActions.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddLeague.Designer.vb">
+      <DependentUpon>frmAddLeague.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddLeague.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddOwner.Designer.vb">
+      <DependentUpon>frmAddOwner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddOwner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddPlayer.Designer.vb">
+      <DependentUpon>frmAddPlayer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddPlayer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddTeam.Designer.vb">
+      <DependentUpon>frmAddTeam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddTeam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditLeague.Designer.vb">
+      <DependentUpon>frmEditLeague.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditLeague.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditOwner.Designer.vb">
+      <DependentUpon>frmEditOwner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditOwner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditPlayer.Designer.vb">
+      <DependentUpon>frmEditPlayer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditPlayer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditTeam.Designer.vb">
+      <DependentUpon>frmEditTeam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditTeam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmActions.resx">
+      <DependentUpon>frmActions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddLeague.resx">
+      <DependentUpon>frmAddLeague.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddOwner.resx">
+      <DependentUpon>frmAddOwner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddPlayer.resx">
+      <DependentUpon>frmAddPlayer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddTeam.resx">
+      <DependentUpon>frmAddTeam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditLeague.resx">
+      <DependentUpon>frmEditLeague.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditOwner.resx">
+      <DependentUpon>frmEditOwner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditPlayer.resx">
+      <DependentUpon>frmEditPlayer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditTeam.resx">
+      <DependentUpon>frmEditTeam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.vbproj">
+      <Project>{AA351F1E-AA3E-4536-A9F8-09603DFF7D25}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataObjects\DataObjects.vbproj">
+      <Project>{07AEC6B0-9E92-4FD8-8589-37F3DCB6F538}</Project>
+      <Name>DataObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
